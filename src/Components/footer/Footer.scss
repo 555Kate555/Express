@@ -1,0 +1,110 @@
+@import "../../scss/vars";
+
+.footer {
+  background: $mainColor;
+  color:#DBDBDB;
+  font-style: normal;
+  font-weight: 500;
+
+  &__header {
+    color:#fff;
+    font-size: 17px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    font-variant: small-caps;
+  }
+
+  &-contacts {
+    &__link {
+      display: block;
+      &--uk,
+      &--aut,
+      &--aus {
+        padding-bottom: 25px;
+      }
+    }
+  }
+
+ &-rights {
+   &__logo {
+     margin-bottom: 16px;
+   }
+
+   &__text {
+     margin-bottom: 16px;
+   }
+ }
+
+  &-address,
+  &-contacts,
+  &-email {
+    margin-top: 4px;
+  }
+
+  &-address {
+    margin-bottom: 11px;
+    &__text {
+      width: 119px;
+    }
+  }
+
+  &-hours {
+    margin-top: 11px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    &-contacts {
+      margin-top: 0;
+      &__link {
+        &--uk,
+        &--aut,
+        &--aus,
+        &--uk1{
+          padding-bottom: 15px;
+        }
+      }
+    }
+
+    &-hours {
+      margin-top: 0;
+    }
+
+    &__header {
+      font-size: 15px;
+      margin-bottom: 15px;
+    }
+
+    &-address,
+    &-email {
+      margin-top: 61px;
+    }
+  }
+}
+
+@media screen and (max-width:575px) {
+  .footer {
+
+    &-contacts {
+      margin-top: 24px;
+    }
+
+    &-address,
+    &-hours {
+      margin-top: 8px;
+    }
+
+    &-address {
+      &__text {
+        width: initial;
+      }
+    }
+    &-email {
+      margin-top: 0px;
+    }
+  }
+}

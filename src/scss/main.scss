@@ -1,0 +1,55 @@
+@import "vars";
+@import "fonts";
+
+
+
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $mainFontFamily;
+  font-size: $mainFontSize;
+  line-height: $mainLineHeight;
+  color: $mainColor;
+  background: #EEF3FC;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.main-container {
+  width: 88%;
+  margin: 0px auto;
+  padding: 72px 0 38px 0;
+}
+
+@media screen and (max-width: 991px) {
+    .main-container {
+      width: 100%;
+      padding: 40px 0 12px 0;
+    }
+}
+
+@media screen and (max-width:575px) {
+  body {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .main-container {
+    padding: 40px 0 42px 0;
+  }
+
+}

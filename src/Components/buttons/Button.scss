@@ -1,0 +1,52 @@
+@import "../../scss/vars";
+
+.button {
+    border: 1px solid #121212;
+    position: relative;
+    outline: none;
+    transition: .2s;
+    z-index: 2;
+    padding: 7px 24px 8px 24px;
+    &:active,
+    &:focus {
+      outline:none;
+    }
+    &:hover {
+      box-shadow: none;
+      transform: translate(-6px, 6px);
+    }
+
+  &-container {
+    position: relative;
+    display: inline-block;
+    &:after {
+      content:"";
+      display: block;
+      border: 1px solid #121212;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      bottom: -6px;
+      left: -6px;
+      z-index: -1;
+    }
+  }
+  &-header {
+    color: #121212;
+    background: #ffffff;
+    &:active {
+      color: #8792A7;
+    }
+  }
+  &-main {
+    color: #FFFFFF;
+    background: $mainColor;
+    vertical-align: bottom;
+    &:active {
+      color: #8792A7;
+    }
+  }
+  &-send {
+    padding: 7px 86px 8px 86px;
+  }
+}

@@ -1,0 +1,68 @@
+.consultation {
+  margin-top: 131px;
+
+  &-container {
+    position: relative;
+    &:before {
+      content:"";
+      position:absolute;
+      background: url('../../../images/coner-top.svg') no-repeat;
+      width: 11px;
+      height: 11px;
+      top: -14%;
+      left: 17%;
+    }
+    &:after {
+      content:"";
+      position:absolute;
+      background: url('../../../images/coner-bottom.svg') no-repeat;
+      width: 11px;
+      height: 11px;
+      bottom: -14%;
+      right: 17%;
+    }
+  }
+
+
+  &__img {
+    display: block;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+
+  &__subtitle {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 34px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #018FDE;
+    margin-bottom: 6px;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #3D3D3D;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-right: 29px;
+  }
+
+  &__img {
+    margin-bottom: 18px;
+  }
+
+  &__btn {
+    padding-left: 19px;
+  }
+}
