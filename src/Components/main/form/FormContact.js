@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import {Form, Col, Row, FloatingLabel} from "react-bootstrap";
 import "./FormContact.scss";
 import Button from "../../buttons/Button";
+import PhoneInput from "./PhoneInput";
 
 
 
@@ -15,12 +16,16 @@ export default class FormContact extends Component {
                     <h2 className="form__title"><span className="form__title--blue">Contact</span> Us</h2>
                         <Row>
                             <Col className="d-grid gap-2">
-                                <FloatingLabel
-                                    controlId="floatingInput"
-                                    label="First name"
-                                >
-                                    <Form.Control type="text" placeholder="First name" />
-                                </FloatingLabel>
+                                <fieldset className="form__fieldset">
+                                    <legend className="form__legend">First name</legend>
+                                    <FloatingLabel
+                                        controlId="floatingInput"
+                                        label="First name"
+                                    >
+                                        <Form.Control type="text" placeholder="First name" />
+                                    </FloatingLabel>
+                                </fieldset>
+
                             </Col>
                             <Col className="d-grid gap-2">
                                 <FloatingLabel
@@ -33,7 +38,7 @@ export default class FormContact extends Component {
                         </Row>
                         <Row>
                             <Col>
-
+                                <PhoneInput/>
                             </Col>
                             <Col>
                                 <FloatingLabel

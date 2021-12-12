@@ -36,6 +36,7 @@ a {
   padding: 72px 0 38px 0;
 }
 
+
 @media screen and (max-width: 991px) {
     .main-container {
       width: 100%;
@@ -43,10 +44,22 @@ a {
     }
 }
 
+@media screen and(max-width:767px) {
+  .container {
+    max-width: 624px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (max-width:575px) {
   body {
     font-size: 12px;
     line-height: 20px;
+    margin: 0 auto;
+  }
+
+  .container {
+    max-width:480px;
   }
   .main-container {
     padding: 40px 0 42px 0;

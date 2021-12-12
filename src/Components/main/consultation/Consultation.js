@@ -8,9 +8,9 @@ import "./Consultation.scss";
 export default class Consultation extends Component {
     render() {
         return (
-           <div className="consultation-container justify-content-md-center">
+           <div className="consultation-container justify-content-center">
                <Row>
-                   <Col className="mx-auto" lg={6}>
+                   <Col className="mx-auto" xl={6} lg={7} md={9}>
                        <h1 className="consultation__title ">
                            Lorem ipsum set ammet test-test
                        </h1>
@@ -23,8 +23,8 @@ export default class Consultation extends Component {
                        </h2>
                    </Col>
                </Row>
-               <Row className="justify-content-md-center">
-                   <Col className="col-md-auto">
+               <Row className="justify-content-center">
+                   <Col className="col-auto">
                        <img
                            src={decorationLine}
                            className="consultation__img"
@@ -32,8 +32,8 @@ export default class Consultation extends Component {
                        />
                    </Col>
                </Row>
-               <Row className="justify-content-md-center">
-                   <Col className="col-md-auto">
+               <Row className="justify-content-center">
+                   <Col className="text-center col-auto" xl={5} lg={6} md={8} sm={9}>
                        <p className="consultation__text">
                            We currently take cases<br/>
                            that are $10,000 US and up

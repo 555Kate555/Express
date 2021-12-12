@@ -40,39 +40,39 @@ export default class Footer extends Component {
                             </h2>
                             <a className="footer-contacts__link footer-contacts__link--uk1" href="tel:+442020202020">
                                 <Row>
-                                    <Col lg={2} md={2} sm={2} xs={2}>
+                                    <Col lg={2} md={2} sm={2} xs={1}>
                                         UK
                                     </Col>
-                                    <Col lg={9} md={9} sm={9} xs={9}>
+                                    <Col lg={10} md={10} sm={10} xs={11}>
                                         +44-2020202020
                                     </Col>
                                 </Row>
                             </a>
                             <a className="footer-contacts__link footer-contacts__link--uk" href="tel:+442020202020">
                                 <Row>
-                                    <Col lg={2} md={2} sm={2} xs={2}>
+                                    <Col lg={2} md={2} sm={2} xs={1}>
                                     </Col>
-                                    <Col lg={9} md={9} sm={9} xs={9}>
+                                    <Col lg={10} md={10} sm={10} xs={11}>
                                         +44-2020202020
                                     </Col>
                                 </Row>
                             </a>
                             <a className="footer-contacts__link footer-contacts__link--aut" href="tel:+442020202020">
                                 <Row>
-                                    <Col lg={2} md={2} sm={2} xs={2}>
+                                    <Col lg={2} md={2} sm={2} xs={1}>
                                         AUT
                                     </Col>
-                                    <Col lg={9} md={9} sm={9} xs={9}>
+                                    <Col lg={10} md={10} sm={10} xs={11}>
                                         +44-2020202020
                                     </Col>
                                 </Row>
                             </a>
                             <a className="footer-contacts__link footer-contacts__link--aus" href="tel:+442020202020">
                                 <Row>
-                                    <Col lg={2} md={2} sm={2} xs={2}>
+                                    <Col lg={2} md={2} sm={2} xs={1}>
                                         AUS
                                     </Col>
-                                    <Col lg={9} md={9} sm={9} xs={9}>
+                                    <Col lg={10} md={10} sm={10} xs={11}>
                                         +44-2020202020
                                     </Col>
                                 </Row>
