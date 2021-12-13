@@ -11,51 +11,54 @@ import PhoneInput from "./PhoneInput";
 export default class FormContact extends Component {
     render() {
         return (
-            <div className="form-block">
-                <Form className="main-container">
+            <div className="main-container form-container">
+                <Form className="form-block mx-auto ">
                     <h2 className="form__title"><span className="form__title--blue">Contact</span> Us</h2>
-                        <Row>
-                            <Col className="d-grid gap-2">
-                                <fieldset className="form__fieldset">
-                                    <legend className="form__legend">First name</legend>
+                        <Row className="form__row">
+                            <Col className="form__column">
+                                {/*<fieldset className="form__fieldset">*/}
+                                {/*    <legend className="form__legend">First name</legend>*/}
                                     <FloatingLabel
                                         controlId="floatingInput"
                                         label="First name"
                                     >
-                                        <Form.Control type="text" placeholder="First name" />
+                                        <Form.Control className="form__input" type="text" placeholder="First name" size="sm"/>
                                     </FloatingLabel>
-                                </fieldset>
+                                {/*</fieldset>*/}
 
                             </Col>
-                            <Col className="d-grid gap-2">
+                            <Col className="form__column">
                                 <FloatingLabel
                                     controlId="floatingInput"
                                     label="Last name"
                                 >
-                                    <Form.Control type="text" placeholder="Last name" />
+                                    <Form.Control className="form__input" type="text" placeholder="Last name" />
                                 </FloatingLabel>
                             </Col>
                         </Row>
-                        <Row>
-                            <Col>
-                                <PhoneInput/>
+                        <Row className="form__row">
+                            <Col className="form__column">
+                                <PhoneInput
+                                    className="form__input"
+                                />
                             </Col>
-                            <Col>
+                            <Col className="form__column">
                                 <FloatingLabel
                                     controlId="floatingInput"
                                     label="Enter email"
                                 >
-                                    <Form.Control type="email" placeholder="Enter email" />
+                                    <Form.Control className="form__input" type="email" placeholder="Enter email" />
                                 </FloatingLabel>
                             </Col>
                         </Row>
                         <Row>
-                            <Col>
+                            <Col className="form__column-textarea">
                                 <FloatingLabel
                                     controlId="floatingInput"
                                     label="Tell Us What Happened"
                                 >
                                     <Form.Control
+                                        className="form__textarea"
                                         as="textarea"
                                         placeholder="Tell Us What Happened"
                                         style={{ height: '100px' }}
