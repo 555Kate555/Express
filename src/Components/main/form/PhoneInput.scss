@@ -1,19 +1,29 @@
+@import "../../../scss/vars";
+
 .PhoneInputInput {
   border: none;
   background:#EEF3FC;
-  color: #8792A7;
+  color: #3D3D3D;;
   display: inline-block;
   width: 100%;
   height: 44px;
   padding-left: 7px;
   padding-right: 5px;
   outline: none;
+  &:focus {
+    background: #fff;
+  }
 }
 
 .PhoneInput {
   background:#EEF3FC;
   padding-left: 18px;
-}
+  &--focus {
+    border: 1px solid #8792A7;
+    background: #fff;
+    }
+  }
+
 
 .PhoneInputCountry {
   margin-right: 0;

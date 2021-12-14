@@ -15,19 +15,15 @@ export default class FormContact extends Component {
                 <Form className="form-block mx-auto ">
                     <h2 className="form__title"><span className="form__title--blue">Contact</span> Us</h2>
                         <Row className="form__row">
-                            <Col className="form__column">
-                                {/*<fieldset className="form__fieldset">*/}
-                                {/*    <legend className="form__legend">First name</legend>*/}
+                            <Col className="form__column" lg={6} md={6} sm={12}>
                                     <FloatingLabel
                                         controlId="floatingInput"
                                         label="First name"
                                     >
                                         <Form.Control className="form__input" type="text" placeholder="First name" size="sm"/>
                                     </FloatingLabel>
-                                {/*</fieldset>*/}
-
                             </Col>
-                            <Col className="form__column">
+                            <Col className="form__column" lg={6} md={6} sm={12}>
                                 <FloatingLabel
                                     controlId="floatingInput"
                                     label="Last name"
@@ -37,12 +33,12 @@ export default class FormContact extends Component {
                             </Col>
                         </Row>
                         <Row className="form__row">
-                            <Col className="form__column">
+                            <Col className="form__column" lg={6} md={6} sm={12}>
                                 <PhoneInput
                                     className="form__input"
                                 />
                             </Col>
-                            <Col className="form__column">
+                            <Col className="form__column" lg={6} md={6} sm={12}>
                                 <FloatingLabel
                                     controlId="floatingInput"
                                     label="Enter email"
@@ -66,8 +62,8 @@ export default class FormContact extends Component {
                                 </FloatingLabel>
                             </Col>
                         </Row>
-                        <Row className="justify-content-md-center">
-                            <Col className="col-md-auto">
+                        <Row className="justify-content-center">
+                            <Col className="col-auto">
                                 <Button
                                     type="submit"
                                     name="Send"
