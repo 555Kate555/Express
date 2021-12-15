@@ -71,7 +71,6 @@ export default class FormContact extends Component {
                                 />
                             </Col>
                         </Row>
-
                 </Form>
             </div>
         )
