@@ -93,11 +93,11 @@
       }
       &.collapsed {
         & .navbar-toggler-icon {
-          background: url("/images/burger.svg") no-repeat;
+          background: url("../../images/burger.svg") no-repeat;
         }
       }
       & .navbar-toggler-icon {
-        background: url("/images/burger-close.svg") no-repeat;
+        background: url("../../images/burger-close.svg") no-repeat;
       }
     }
 
