@@ -93,11 +93,11 @@
       }
       &.collapsed {
         & .navbar-toggler-icon {
-          background: url("../../images/burger.svg") no-repeat;
+          background: url("/images/burger.svg") no-repeat;
         }
       }
       & .navbar-toggler-icon {
-        background: url("../../images/burger-close.svg") no-repeat;
+        background: url("/images/burger-close.svg") no-repeat;
       }
     }
 
@@ -177,25 +177,18 @@
         left: 0;
         width: 100%;
         z-index: 10;
+        & .button-header {
+          background-color: white;
+        }
       }
-    }
-    & .dropdown-toggle.header__link{
-       //border-top: 1px solid #DBDBDB;
     }
     &__link {
       font-weight: 600;
       font-size: 26px;
       line-height: 32px;
       letter-spacing: 0.01em;
-      //border-top: 1px solid #DBDBDB;
       border-bottom: 1px solid #DBDBDB;
       padding: 1.5rem 1.2rem 1.5rem;
-      &:first-child {
-        //border-top: none;
-      }
-      &:last-child{
-        //border-bottom: 1px solid #DBDBDB;
-      }
 
      &-dropdown {
        &:after {
