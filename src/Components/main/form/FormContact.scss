@@ -52,6 +52,10 @@ textarea {
 
   &-control {
     border: none;
+    &:focus {
+      border: 1px solid #8792A7;
+      box-shadow: none;
+    }
   }
 }
 
@@ -62,12 +66,6 @@ textarea {
     }
     &__row {
       margin-bottom: 0;
-    }
-    &-control {
-      &:focus {
-        border: 1px solid #8792A7;
-        box-shadow: none;
-      }
     }
     &__title {
       margin-bottom: 29px;
