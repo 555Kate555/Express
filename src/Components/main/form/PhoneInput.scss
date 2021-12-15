@@ -1,13 +1,13 @@
 @import "../../../scss/vars";
 
 .PhoneInputInput {
-  border: none;
+  border: 1px solid transparent;
   background:#EEF3FC;
   color: #3D3D3D;;
   display: inline-block;
   width: 100%;
   height: 44px;
-  padding-left: 7px;
+  padding-left: 60px;
   padding-right: 5px;
   outline: none;
   &:focus {
@@ -17,15 +17,26 @@
 
 .PhoneInput {
   background:#EEF3FC;
-  padding-left: 18px;
+  position: relative;
   &--focus {
-    border: 1px solid #8792A7;
     background: #fff;
     border-radius: 0.25rem;
+    & input {
+      border: 1px solid #8792A7;
+      background: #fff;
+      border-radius: 0.25rem;
+    }
   }
+}
 
+.PhoneInputCountrySelectArrow {
+  position: absolute;
+  left: 25px;
 }
 
 .PhoneInputCountry {
   margin-right: 0;
+  position: absolute;
+  top: 14px;
+  left: 20px;
 }
